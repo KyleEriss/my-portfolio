@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
-    <meta name="description" content="Portfolio-app" />
-    <meta name="title" property="og:title" content="Portfolio" />
-    <meta property="og:type" content="Website" />
-    <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51000560133_71c3f7e7a5_n.jpg" />
-    <meta name="description" property="og:description" content="Portfolio" /><meta name="author" content="Kyle Eriss" />
-    
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta name="description" content="Portfolio-app" />
+  <meta name="title" property="og:title" content="Portfolio" />
+  <meta property="og:type" content="Website" />
+  <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51000560133_71c3f7e7a5_n.jpg" />
+  <meta name="description" property="og:description" content="Portfolio" />
+  <meta name="author" content="Kyle Eriss" />
+
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
     type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+      type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-  <title>portfolio-responsive-layout-and-contact-form</title>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <title>portfolio-responsive-layout-and-contact-form</title>
+  </head>
 
 <body>
 
@@ -51,28 +54,28 @@
   </header>
 
   <main>
-    <div class="wrapper">
-      <article id="home">
+    <article id="home">
+      <div class="wrapper">
         <div class="group">
           <div class="item">
-            <img src="images/profilepicture2.JPG" alt="profilepicture.JPG" />
+            <img src="images/profilepicture2.JPG" alt="profilepicture.JPG" class="profilepicture" />
           </div>
           <div class="item">
-            <p class="introcontact">Hi. I'm Kyle!</p>
+            <h2>Hi. I'm Kyle!</h2>
 
             <p>I'm a software developer with a background in workforce development living in Boston, MA. </p>
 
             <p>My interests include:</p>
 
-            <ul>
+            <ul class="bulletpoints">
               <li>Expanding access to learning and technology</li>
               <li>Designing quality websites that engage users</li>
               <li>Exploring new places and exchanging ideas with other developers</li>
             </ul>
           </div>
         </div>
-      </article>
-    </div>
+      </div>
+    </article>
 
     <article id="about">
       <div class="wrapper">
@@ -106,46 +109,78 @@
         <div class="portfolioSectionTitle">
           <h2>Check out my work</h2>
         </div>
+
         <div class="groupPortfolio">
 
+
           <div class="itemPortfolio">
+
             <div class="portfolioTitle">
               <p><a href="https://recipro-client.vercel.app/search" target="_blank">Recipro</a></p>
             </div>
-            <img src="images/recipro.jpg" alt="recipro2.jpg" class="imgPortfolio" />
-            <p>The Recipro web app lets users explore recipes based on ingredients they have on hand. Users can also
-              save any of the recipes to their own personalized list. Feel free to check out the html and css pages on
-              <a href="https://github.com/KyleEriss/recipro-client" target="_blank">GitHub</a>
-            </p>
-            <p>Tech used: React, Node, Express, PostgreSQL, JWTs for authorization, and CSS animations</p>
+
+            <div class="portfolioFlex">
+              <div class="portfolioItemFlex">
+                <img src="images/recipro.jpg" alt="recipro2.jpg" class="imgPortfolio" />
+              </div>
+
+              <div class="portfolioItemFlex">
+                <p>The Recipro web app lets users explore recipes based on ingredients they have on hand. Users can also
+                  save any of the recipes to their own personalized list. Feel free to check out the html and css pages
+                  on
+                  <a href="https://github.com/KyleEriss/recipro-client" target="_blank">GitHub</a>
+                </p>
+                <p>Tech used: React, Node, Express, PostgreSQL, JWTs for authorization, and CSS animations</p>
+              </div>
+            </div>
+
           </div>
 
           <div class="itemPortfolio">
+
             <div class="portfolioTitle">
               <p><a href="https://reconnaissound-client.vercel.app/" target="_blank">Reconnaissound</a></p>
             </div>
-            <img src="images/reconnaissound.jpg" alt="reconnaissound2.JPG" class="imgPortfolio" />
-            <p>Reconnaissound is a React web app which lets users generate a list of trending YouTube music videos from
-              any country of their choosing. Users can watch the videos directly on the web app. Check it out on <a
-                href="https://github.com/KyleEriss/reconnaissound-client" target="_blank">GitHub</a></p>
-            <p>Tech used: React, Node, Express, PostgreSQL, JWTs for authorization, and CSS animations</p>
+
+            <div class="portfolioFlex">
+              <div class="portfolioItemFlex">
+                <img src="images/reconnaissound.jpg" alt="reconnaissound2.JPG" class="imgPortfolio" />
+              </div>
+
+              <div class="portfolioItemFlex">
+                <p>Reconnaissound is a React web app which lets users generate a list of trending YouTube music videos
+                  from
+                  any country of their choosing. Users can watch the videos directly on the web app. Check it out on <a
+                    href="https://github.com/KyleEriss/reconnaissound-client" target="_blank">GitHub</a></p>
+                <p>Tech used: React, Node, Express, PostgreSQL, JWTs for authorization, and CSS animations</p>
+              </div>
+            </div>
+
           </div>
 
           <div class="itemPortfolio">
+
             <div class="portfolioTitle">
               <p><a href="https://kyleeriss.github.io/SoundScout/" target="_blank">SoundScout</a></p>
             </div>
-            <img src="images/reconnaissound.png" alt="reconnaissound2.png" class="imgPortfolio" />
-            <p>The SoundScout web app is an earlier version of Reconnaissound. Users can browse music videos from any
-              country
-              of their choosing. The app uses traditional JS, HTML, and CSS instead of React. Check it out on <a
-                href="https://github.com/KyleEriss/SoundScout" target="_blank">GitHub</a></p>
-            <p>Tech used: HTML, CSS, JavaScript, jQuery</p>
+
+            <div class="portfolioFlex">
+              <div class="portfolioItemFlex">
+                <img src="images/reconnaissound.png" alt="reconnaissound2.png" class="imgPortfolio" />
+              </div>
+
+              <div class="portfolioItemFlex">
+                <p>The SoundScout web app is an earlier version of Reconnaissound. Users can browse music videos from
+                  any
+                  country
+                  of their choosing. The app uses traditional JS, HTML, and CSS instead of React. Check it out on <a
+                    href="https://github.com/KyleEriss/SoundScout" target="_blank">GitHub</a></p>
+                <p>Tech used: HTML, CSS, JavaScript, jQuery</p>
+              </div>
+            </div>
+
           </div>
-
         </div>
-      </div>
-
       </div>
 
     </article>
