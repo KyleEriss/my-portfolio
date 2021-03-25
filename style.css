@@ -67,7 +67,7 @@ main {
 }
 
 img {
-  width: 100%;
+  width: 50%;
   border-radius: 8px;
 }
 
@@ -137,10 +137,10 @@ form textarea {
 }
 
 form textarea {
-  height: 160px;
+  height: 100px;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1260px) {
   header {
     display: flex;
     background-color: #140a00d2;
@@ -191,23 +191,60 @@ form textarea {
   .group {
     flex-direction: row;
   }
+
+  .groupPortfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
   .item {
-    flex: 2;
-    margin:10px
+    flex: 1;
+    margin:10px;
   }
-  img {
-    width: 80%;
+
+  .itemPortfolio {
+    width: 30%;
   }
+
+  .portfolioSectionTitle{
+    margin-bottom: 20px;
+  }
+
+  /* .portfolioTitle {
+    text-align: center;
+  } */
+
+  img.imgPortfolio {
+    width: 350px;
+    height: 200px;
+  }
+
   img.rounded{
-    width: 80%;
+    width: 50%;
   }
-  #contact .item {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
+
   #contact .introcontact {
   text-align: center;
   }
+
+  .groupContact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-left: 250px;
+  }
+
+  .itemContact {
+    width: 50%;
+  }
+
+  form {
+    width: 75%
+  }
+  
 }
 
 main  a:link { color: blue }
