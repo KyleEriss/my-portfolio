@@ -328,8 +328,6 @@ form textarea {
 
   .itemPortfolio {
     display: block;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .portfolioFlex {
@@ -351,7 +349,7 @@ form textarea {
   }
 
   img.profilepicture {
-    width: 60%;
+    width: 50%;
   }
 
   img.rounded {
@@ -364,7 +362,7 @@ form textarea {
   }
 
   .portfolioItemFlex {
-    width: 300px;
+    width: 350px;
   }
 
   .portfolioFlex {
