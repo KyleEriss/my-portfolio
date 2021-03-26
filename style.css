@@ -1,6 +1,5 @@
 header {
   background-color: #140a00d2;
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 5px;
   width: 100%;
@@ -72,6 +71,7 @@ img.profilepicture {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+  height: auto;
 }
 
 img.rounded {
@@ -79,22 +79,25 @@ img.rounded {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 60%;
+  height: auto;
 }
 
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.item {
-  flex: 1;
-  margin: 10px;
+.groupHome {
+  display: flex;
+  flex-direction: column;
 }
 
-.item-double {
-  flex: 2;
-  margin: 10px;
+.itemHome {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wrapper {
@@ -115,10 +118,6 @@ main .wrapper h3 {
   margin-bottom: 15px;
 }
 
-main .introcontact {
-  font-size: 24px;
-}
-
 #home {
   padding: 20px 0 30px 0;
 }
@@ -129,36 +128,68 @@ main .introcontact {
   
 }
 
+#portfolio {
+  padding: 20px 0 30px 0;
+  width: 80%;
+  margin: auto;
+}
+
+.portfolioSectionTitle {
+  text-align: center;
+}
+
+.groupPortfolio {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.itemPortfolio {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .portfolioTitle {
   padding-top: 20px;
 }
 
 .portfolioItemFlex {
-  width: 80%;
+  width: 250px;
 }
 
 img.imgPortfolio {
   width: 250px;
   height: 143px;
   padding-bottom: 0;
+  border-radius: 8px;
 }
 
-.groupPortfolio {
-  margin-bottom: 20px;
+.groupContact {
+  padding-left: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.itemContact {
+  margin-bottom: 30px;
 }
 
 #contact {
   background-color: #a3a2a0;
-  padding: 20px 0 30px 0
+  padding: 20px 0 30px 0;
 }
 
-#contact .introcontact {
-  padding-left: 10px;
+#contact h2 {
+  margin-bottom: 40px;
 }
 
 form {
-  padding-right: 6px;
-  width: 50%;
+  width: 100%;
 }
 
 form input, 
@@ -168,34 +199,20 @@ form textarea {
 }
 
 form textarea {
-  height: 100px;
+  height: 80px;
 }
 
 @media all and (min-width: 450px){
-
+  
     img.imgPortfolio {
-    width: 350px;
-    height: 200px;
+    width: 400px;
+    height: 229px;
   }
 
-}
-
-@media all and (min-width: 545px) {
   .portfolioItemFlex {
-    width: 75%;
+    width: 400px;
   }
-}
 
-@media all and (min-width: 600px) {
-  .portfolioItemFlex {
-    width: 67%;
-  }
-}
-
-@media all and (min-width: 700px) {
-  .portfolioItemFlex {
-    width: 55%;
-  }
 }
 
 @media all and (min-width: 800px) {
@@ -255,56 +272,64 @@ form textarea {
     margin-bottom: 0;
     text-align: start;
   }
-  
+
   .group {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .portfolioItemFlex {
-    width: 50%;
+  .item {
+    flex: 1;
+  }
+
+  .groupHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .itemHome {
+    flex: 1;
   }
 
   img.profilepicture {
-    border-radius: 8px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 80%;
   }
 
   img.rounded {
-    border-radius: 8px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    width: 80%;
   }
 
-  #contact .introcontact {
-  text-align: center;
+  .aboutText {
+    padding-left: 10px;
   }
 
   .groupContact {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
   }
 
   .itemContact {
-    width: 100%;
-  }
-
-  form {
-    width: 100%
+    flex: 1;
   }
   
 }
 
 @media all and (min-width: 915px) {
 
-  .portfolioItemFlex {
-    width: 100%;
+  img.rounded {
+    width: 60%;
+  }
+
+  .portfolioSectionTitle {
+    text-align: start;
+  }
+
+  .itemPortfolio {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .portfolioFlex {
@@ -314,27 +339,32 @@ form textarea {
 
   .portfolioItemFlex {
     flex: 1;
-
   }
+
 }
 
 
-@media all and (min-width: 1260px) {
+@media all and (min-width: 1400px) {
+
+  .aboutText {
+    width: 500px
+  }
 
   img.profilepicture {
-    border-radius: 8px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 60%;
   }
 
   img.rounded {
-    border-radius: 8px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    width: 50%;
+  }
+
+  img.imgPortfolio {
+    width: 350px;
+    height: 200px;
+  }
+
+  .portfolioItemFlex {
+    width: 300px;
   }
 
   .portfolioFlex {
@@ -344,12 +374,10 @@ form textarea {
   .groupPortfolio{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
   }
 
 .itemPortfolio {
-    width: 30%;
+    width: 100%;
   }
 
 .portfolioSectionTitle{
