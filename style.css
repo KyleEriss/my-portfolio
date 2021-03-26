@@ -144,7 +144,6 @@ main .wrapper h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .itemPortfolio {
@@ -373,7 +372,9 @@ form textarea {
   .groupPortfolio{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
+
 
 .itemPortfolio {
     width: 100%;
