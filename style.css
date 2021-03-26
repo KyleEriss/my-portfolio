@@ -204,9 +204,9 @@ form textarea {
 
 @media all and (min-width: 450px){
   
-    img.imgPortfolio {
-    width: 400px;
-    height: 229px;
+  img.imgPortfolio {
+    width: 350px;
+    height: 200px;
   }
 
   .portfolioItemFlex {
@@ -328,6 +328,7 @@ form textarea {
 
   .itemPortfolio {
     display: block;
+    margin: 0;
   }
 
   .portfolioFlex {
@@ -362,7 +363,7 @@ form textarea {
   }
 
   .portfolioItemFlex {
-    width: 350px;
+    width: 400px;
   }
 
   .portfolioFlex {
@@ -376,6 +377,7 @@ form textarea {
 
 .itemPortfolio {
     width: 100%;
+    margin: auto;
   }
 
 .portfolioSectionTitle{
