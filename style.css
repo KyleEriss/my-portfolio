@@ -140,7 +140,6 @@ main .wrapper h3 {
 
 .groupPortfolio {
   margin-bottom: 20px;
-  padding-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,7 +321,7 @@ form textarea {
   }
   
   .groupPortfolio{
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .portfolioSectionTitle {
@@ -366,7 +365,7 @@ form textarea {
   }
 
   .portfolioItemFlex {
-    width: 400px;
+    width: 350px;
   }
 
   .portfolioFlex {
