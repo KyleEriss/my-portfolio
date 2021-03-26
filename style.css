@@ -205,12 +205,12 @@ form textarea {
 @media all and (min-width: 450px){
   
   img.imgPortfolio {
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 172px;
   }
 
   .portfolioItemFlex {
-    width: 400px;
+    width: 300px;
   }
 
 }
