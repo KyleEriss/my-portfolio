@@ -320,6 +320,10 @@ form textarea {
   img.rounded {
     width: 60%;
   }
+  
+  .groupPortfolio{
+    justify-content: space-between;
+  }
 
   .portfolioSectionTitle {
     text-align: start;
