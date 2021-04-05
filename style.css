@@ -86,7 +86,6 @@ img.rounded {
 .group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .groupHome {
@@ -95,6 +94,12 @@ img.rounded {
 }
 
 .itemHome {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -168,7 +173,6 @@ img.imgPortfolio {
 }
 
 .groupContact {
-  padding-left: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -229,7 +233,7 @@ form textarea {
     letter-spacing: 1px;
     font-family: 'Nanum Pen Script', cursive;
     color: #c8c8c8;
-    margin: 0;
+    margin-bottom: 20px;
     padding: 10px;
     line-height: 35px;
     text-align: left;
@@ -267,15 +271,14 @@ form textarea {
   }
 
   main .wrapper h2 {
-    padding-left: 10px;
     margin-bottom: 0;
     text-align: start;
   }
 
   .group {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
   }
 
   .item {
@@ -285,7 +288,7 @@ form textarea {
   .groupHome {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
   }
 
   .itemHome {
@@ -300,10 +303,6 @@ form textarea {
     width: 80%;
   }
 
-  .aboutText {
-    padding-left: 10px;
-  }
-
   .groupContact {
     display: flex;
     flex-direction: row;
@@ -316,10 +315,6 @@ form textarea {
 }
 
 @media all and (min-width: 915px) {
-
-  img.rounded {
-    width: 60%;
-  }
   
   .groupPortfolio{
     justify-content: space-around;
@@ -345,12 +340,17 @@ form textarea {
 
 }
 
+@media all and (min-width: 1000px) {
+  img.profilepicture {
+    width: 65%;
+  }
+
+  img.rounded {
+    width: 65%;
+  }
+}
 
 @media all and (min-width: 1400px) {
-
-  .aboutText {
-    width: 500px
-  }
 
   img.profilepicture {
     width: 50%;
